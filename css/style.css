@@ -41,9 +41,6 @@ a {
     font-weight: bold;
 
 }
-a:link {
-   
-}
 a:hover {
    color: blue;
 }
@@ -61,18 +58,10 @@ a:visited {
     color: #ffffff;
   
 }
-.main-content h4 {
-    /*border: 2px solid red;*/
-    
-}
 .main-content h1 {
-    /*border: 2px solid red;*/;
+    /*border: 2px solid red;*/
     color: aqua;
     margin-top: 0px;
-}
-.main-content h3 {
-    /*border: 2px solid red;*/
-
 }
 .main-content p {
     /*border: 2px solid red;*/
