@@ -1,0 +1,64 @@
+* {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    letter-spacing: 10px;
+}
+.wrapper {
+    width: 90%;
+    margin: auto;
+    padding-left: 65px;
+    box-sizing: border-box;
+}
+.wrapper div, .experience {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.experience {
+    width: 400px;
+    height: 300px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    background-color: rgba(236, 247, 244, 0.658);
+}
+.experience h3 {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.experience p {
+    line-height: 30px;
+}
+.years {
+    border: solid 2px red;
+    margin-left: 50px;
+    border: solid #ffffff 2px;
+    background-color: rgb(14, 182, 182);
+    padding: 5px 10px 5px 10px;
+    color: #ffffff;
+    
+}
+.row:before,
+.row:after,
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.row:after,
+.group:after{
+    clear: both;
+}
+
+.row,
+.group {
+    zoom: 1;
+}     
