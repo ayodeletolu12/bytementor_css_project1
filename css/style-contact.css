@@ -1,0 +1,106 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.head {
+    width: 90%;
+    /*border: solid red 3px;*/
+    margin: auto;
+    text-align: center;
+    background-color: rgb(18, 124, 124);
+    color: #ffffff;
+    margin-top: 50px;
+}
+.head .head-content {
+    width: 50%;
+    margin: auto;
+   /* border: solid blue 2px;*/
+   padding: 50px 0;
+}
+.head .head-content h1 {
+    font-weight: bold;
+}
+.head .head-content p {
+    line-height: 30px;
+}
+.hire-me, .my-work {
+    padding: 10px 30px;
+    border: none;
+}
+.my-work {
+    background-color: #ffffff;
+    color: rgba(4, 46, 46, 0.795);
+    margin-right: 5px;
+}
+.hire-me {
+    background-color: black;
+    color: #ffffff;
+}
+div h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+.contact-info {
+    /*border: 3px solid red;*/
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.address-map {
+    width: 45%;
+    padding: 20px;
+}
+.contact-form {
+    width: 45%;
+    padding: 20px;
+
+}
+label {
+    padding-bottom: 30px;
+}
+input[type="text"], input[type="email"], input[type="telephone"], textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+::placeholder {
+    padding: 10px;
+}
+div .button {
+    text-align: right;   
+}
+button {
+    background-color: rgb(18, 124, 124); 
+    padding: 10px 20px;
+}
+footer {
+    /*border: red solid 3px;*/
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+    height: 100px;
+    background-color: black;
+}
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+footer ul li {
+    
+    list-style-type: none;
+    margin-bottom: 20px;
+    
+}
+footer ul li a {
+    list-style-type: none;
+    text-decoration: none;
+    margin-left: 20px;
+    border: 2px solid white;
+    color: #ffffff;
+    padding-bottom: 20px;
+    border: none;
+    
+}
+
+

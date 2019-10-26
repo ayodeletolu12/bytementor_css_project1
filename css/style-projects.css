@@ -1,0 +1,39 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+    text-align: center;
+    text-decoration: underline;
+    letter-spacing: 10px;
+}
+.projects-container {
+    min-width: 70%;
+    min-height: 550px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 50px 0 0 90px;
+    
+}
+.project {
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+}
+.row:before,
+.row:after,
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.row:after,
+.group:after{
+    clear: both;
+}
+
+.row,
+.group {
+    zoom: 1;
+} 
+
