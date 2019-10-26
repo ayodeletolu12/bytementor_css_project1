@@ -25,6 +25,32 @@ header {
     color: #ffffff;
    
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+.dropbtn {
+    background-color: inherit ;
+    padding: 10px;
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+    font-size: inherit;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: inherit;
+    min-width: 100px;
+    padding: 10px 15px;
+   /* z-index: 1;*/
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
 nav ul {
    margin-left: 200px;
 }
