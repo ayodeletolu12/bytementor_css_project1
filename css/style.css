@@ -1,18 +1,36 @@
+.row:before,
+.row:after,
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.row:after,
+.group:after{
+    clear: both;
+}
+
+.row,
+.group {
+    zoom: 1;
+} 
+
 * {
     box-sizing: border-box;
 }
-body {
+.main-body {
     padding: 0;
     margin: 0;
     background-image: url('../images/banner-copy.jpg');
     background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 100px;
     /*box-shadow: inset 10px 10px 50px rgba(0, 0, 0, 0.911);*/
 }
 .container {
     width: 90%;
-    margin: auto;
-    
+    margin: auto;   
 }
 header {
    display: flex;
@@ -48,7 +66,6 @@ header {
 }
 .dropdown:hover .dropdown-content {
     display: block;
-
 }
 
 nav ul {
@@ -59,16 +76,16 @@ li {
    display: inline;
    list-style-type: none;
    color: #ffffff;
-   padding-right: 10px;
+   padding-right: 5px;
 }
 a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-
 }
 a:hover {
    color: blue;
+   text-decoration: underline;
 }
 a:visited {
     color: aqua;
@@ -81,8 +98,7 @@ a:visited {
     padding-left: 20px;
     width: 70%;
     margin-bottom: 20px;
-    color: #ffffff;
-  
+    color: #ffffff; 
 }
 .main-content h1 {
     /*border: 2px solid red;*/
@@ -94,11 +110,10 @@ a:visited {
     line-height: 30px;
 }
 .bottom-nav{
-    /*padding-bottom: 170px;*/
+    padding-bottom: 150px;
     margin-left: 0;
 }
 .bottom-nav ul {
-    /*border: 2px solid red;*/
     padding: 10px 20px;
 }
 .bottom-nav ul li {
@@ -107,9 +122,7 @@ a:visited {
     padding: 10px 30px;
 }
 .bottom-nav ul li a {
-    color: white;
-  /*border: 2px solid red;*/
-   
+    color: white;  
 }
 
 @media(max-width:600px) {
@@ -137,6 +150,265 @@ a:visited {
         color: blue;
        
     }
+}
+/*--- Homepage style ends here---*/
 
+/*-----About style begins---*/
+
+.container-about {
+    width: inherit;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container-about .header {
+    text-align: center;
+    padding-bottom: 50px;
+}
+.container-about .container {
+    width: 90%;
+    min-height: 400px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0; 
+    padding-bottom: 100px;  
+}
+.container-about .container .main-content1 {
+    width: 30%;
+    padding-top: 0;
+}
+.container-about .container .my-image {
+    width: 30%;     
+}
+.container-about .container .main-content2 {
+    width: 30%;  
+}
+.container-about .container p {
+    line-height: 25px;
+}
+.container-about .main-content1 button {
+    margin-top: 25px;
+    padding-top: 10px;
+}
+.main-content2 .no1 h3{
+    margin-right: 20px;
+}
+.main-content2 .no1 h3 .rating {
+    padding-left: 140px;
+}
+.main-content2 .no1 h3 .rating2 {
+    padding-left: 180px;
+}
+.main-content2 .no1 h3 .rating3 {
+    padding-left: 160px;
+}
+/*--- About style ends here*/
+
+/*---Service page style begins----*/
+
+.container-service {
+    background-color: #3fbd93; /* medium aqua marine*/
+    color: #ffffff;
+}
+.container-service .header {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 100px;
+}
+.container-service .container {
+    margin: auto;
+    width: 80%;
+    padding-bottom: 80px;
+    padding-top: 30px;
+   
+}
+.container-service .container div {
+    float: left;
+    width: 30%;
+    margin-right: 40px;
+    padding: 10px;
+
+   /* border: solid red 2px;*/
+}
+.container-service .container div h3 {
+    font-size: 23px;
+    font-weight: bolder;
+}
+.container-service .container div p {
+    line-height: 30px;
+    font-size: 15px;
+}
+/*--Service page style ends here---*/ 
+
+/*----Experience page style begins here-----*/
+
+.container-experience{
+    margin: auto;
+    width: 90%;
+}
+.container-experience .header {
+    text-align: center;
+    text-decoration: underline;
+    padding: 40px 0 50px 0;
+    font-size: 20px;   
+}
+.container-experience .wrapper div, .experience1{
+    width: 30%;
+    float: left;
+    line-height: 30px;
+    padding: 20px 30px;
+}
+.container-experience .years {
+    padding: 3px 10px;
+    margin-left: 40px;
+    background-color: #3fbd93;
+    color: #ffffff; 
 }
 
+/*---Experience page style ends here---*/
+
+/*--- blog-container page style starts here--*/
+
+.blog-container {
+    background-image: url('../images/blog1.jpg');
+    padding-bottom: 100px;
+}
+.blog-container .header {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 40px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.blog-container .write-up {
+    width: 50%;
+    margin-left: 150px;
+    color: #ffffff;
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+.blog-container .exp-wrapper {
+    width: 80%;
+    margin: auto;
+}
+.blog-container .experience {
+    float: left;
+    width: 30%;
+    color: #000000;
+    margin-right: 30px;
+    padding: 20px;
+    line-height: 30px;
+    background-color: #ffffff;
+}
+.blog-container .years {
+    margin-left: 70px;
+    background-color: #3fbd93;
+    padding: 5px 10px;
+}
+.blog-container a {
+    color: rgb(14, 14, 124);
+}
+/*--- blog style ends here */
+
+/*--project style begins --*/
+
+.project-page .header {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 40px;
+    color: #000000;
+    font-weight: bold;
+}
+.project-page .projects-container {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+.project-page .project {
+    float: left;
+    padding: 10px;
+}
+
+/* project page style ends */
+
+/* contact page style begins here*/
+
+.head {
+    width: 100%;
+    background-color: rgb(47, 47, 240);
+}
+.head .head-content {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    color: #ffffff;
+    padding: 30px 0;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+.head .head-content button {
+    padding: 10px 25px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+   
+}
+.head .head-content .hire-me {
+    background-color: black;
+    color: #ffffff;
+}
+.contact-header h1 {
+    text-align: center;
+}
+.contact-info {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.contact-info .address-map {
+    width: 40%;
+    padding: 10px 20px;
+}
+.contact-info .contact-form {
+    width: 40%;
+    padding: 10px 20px;
+}
+label {
+    margin-right: 30px;
+    display: inline-block;
+    font-weight: bold;
+}
+input[type], textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 80%;
+}
+.button {
+    padding-top: 30px;
+    text-align: right;   
+}
+.button button {
+    background-color: #3fbd93;
+}
+/* contact style page ends here*/
+
+footer{
+    background-color: #000000;
+    color: #ffffff;
+}
+footer ul {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+footer li {
+    margin-right: 20px;
+    padding-top: 50px;
+}
+footer h3, p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+footer p {
+    padding-bottom: 30px;
+}
