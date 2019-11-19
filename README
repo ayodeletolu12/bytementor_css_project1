@@ -1,3 +1,11 @@
 This project requires code review.
 
-I will appreciate areas that required improvement in this project
+At first the project was developed to have separate pages instead of a single page website. 
+
+it was further reveiwed to use a single page design pattern so everything will be on the same page instead of having separate pages.
+
+I use HTML ID in achieving the page scrolling in such a way that on clicking about in the Nav bar it will scroll down to the about section of the web page and on-clicking contact it will take me to contact section all in a single page.
+
+The responsiveness of the web page was not put into consideration at this time.
+
+This is basically HTML and CSS.
